@@ -128,3 +128,101 @@ img {
     border-radius: 50%;
     margin-bottom: 15px;
 }
+
+.cases img:hover{
+    opacity: 0.7;
+}
+
+.team img {
+    border-radius: 50%;
+} 
+
+/* Callback form */
+.callback-form {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.callback-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+    margin-bottom: 15px;
+}
+
+.callback-form input {
+    width: 100%;
+    padding: 4px;
+    height: 40px;
+    border: #f5f5f5 1px solid;
+}
+
+.callback-form input:focus {
+    outline-color: #28a745;
+}
+
+.callback-form .btn {
+    padding: 12px 0;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #28a745;
+}
+
+.footer .social > * {
+    margin: 0 15px;
+}
+
+/* Mobile */
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+
+    .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+        /* Can also display block it will stack them and give the same effect */
+        /* display: block; */
+    }
+
+    .flex-columns .column, .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    /* fix this so when you make images smaller they also remain centered on the page */
+    .cases  {
+        align-content: space-between;
+    }
+
+    .team img {
+        width: 70%;
+    }
+
+
+}
+
